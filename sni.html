@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="webber.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webber-Javascript Tutorial</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  margin: 0;
+   
+}
+
+.header{
+  background-color: #0E1241;
+  color: #fff;
+  padding: 20px;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  width: 100%;
+}
+
+.footer{background-color:#0E1241;
+      color: #fff;
+      padding: 20px;}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.content {
+  flex: 2;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.links{float: right;
+        margin-right: 70px;
+        
+    }
+
+.conto{margin-left: 70px;}
+.conttw{margin-left:170px;}
+.conttr{margin-left:170px;}
+.footer{background-color:#0E1241;
+    display: flex;
+}
+
+.hm{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.hm:hover{text-decoration: underline;}
+
+.ts{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.ts:hover{text-decoration: underline;}
+
+.jsb{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.jsb:hover{text-decoration: underline;}
+
+.jsd{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.jsd:hover{text-decoration: underline;}
+
+.st{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.st:hover{text-decoration: underline;}
+
+.ad{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.ad:hover{text-decoration: underline;}
+
+.web{color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.web:hover{text-decoration: underline;}
+
+.es{color: white;
+  text-decoration: none;
+   
+}
+.es:hover{text-decoration: underline;}
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <b style="font-size: 15px;">Webber Tutorial</b>
+    <b class="links">
+    <a href="webber.html" class="hm">HOME</a>
+    <a href="typescriptt.html" class="ts">TYPESCRIPT</a>
+    <a href="jsb.html" class="jsb">JS BOM</a>
+    <a href="jsd.html" class="jsd">JS DOM</a>
+    <a href="sni.html" class="st">SNIPPET</a>
+    <a href="adv.html" class="ad">ADVANCED</a>
+    <a href="weba.html" class="web">WEB API</a>
+    <a href="es6.html" class="es">ES6</a>
+    </b>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+             
+    </div>
+    <div class="content">
+            <small>
+            <h2>TypeScript Tutorial</h2>
+            <p>TypeScript is typed JavaScript. TypeScript adds types to JavaScript to help you speed up the development by catching <br> errors before you even run the JavaScript code.</p>
+            
+            <p>TypeScript is an open-source programming language that builds on top of JavaScript. It works on any web browser,<br> any OS, and any environment that JavaScript runs.</p>
+            
+            <p>In this TypeScript tutorial, you’ll learn:</p>
+            
+            <ul><li>Why TypeScript offers a lot of benefits over vanilla JavaScript.</li>
+            <li>Understand what TypeScript truly is and how it works under the hood.</li>
+            <li>Use TypeScript and its rich features like Types, Classes, Interfaces, Modules, and much more.</li></ul>
+            
+            <h3>Prerequisites</h3>
+            
+            <p>To follow the tutorial, you need to have:</p>
+            <ul>
+            <li>Basic JavaScript knowledge. If you want to learn JavaScript, check out the <span><a href="webber.html">JavaScript Tutorial.</a></span></li>
+            <li><span><a href="#">ECMAScript 2015 or ES6 knowledge.</a></span></li></ul>
+            
+            <h2>Section 1. Getting Started</h2>
+            <p><span><a href="#">What is TypeScript</a></span> – learn about what typescript is and its advantages over vanilla JavaScript.</p>
+            <p><span><a href="#">Setting up the TypeScript development environment</a></span> – show you how to set up a TypeScript development environment to be more productive in TypeScript.</p>
+            <p><span><a href="#">TypeScript Hello World</a></span> – walk you through the steps to create the first program in TypeScript called <b style="color:red;">Hello, World!</b></p>
+            <p><span><a href="#">Why TypeScript</a></span> – clearly understand why you should use TypeScript.</p>
+            
+            <h2>Section 2. Basic Types</h2>
+            <p><span><a href="#">Type Annotation</a></span> – learn how to use type annotation to define the static type for variables, function parameters, and return values.</p>
+            <p><span><a href="#">Number</a></span> – learn about the numeric types including floating-point numbers and big integers.</p>
+            <p><span><a href="#">String</a></span> – show you how to use the string type in TypeScript.</p>
+            <p><span><a href="#">Boolean</a></span> – guide you on the boolean type and how to use it effectively.</p>
+            <p><span><a href="#">Object Type</a></span> – introduce you to the object type that represents non-primitive values.</p>
+            <p><span><a href="#">Array</a></span> – show you how to use an array and its operations.</p>
+            <p><span><a href="#">Tuple</a></span> – learn how to store a fixed number of elements with known types in a tuple.</p>
+            <p><a href="#">Enum</a> – show you how to define a group of named constants by using the enum type.</p>
+            <p><span><a href="#">Any Type</a></span> – learn how to use the <b style="color:red;">any</b> type to store a value of any type in a variable.</p>
+            <p><span><a href="#">Void type</a></span> – show you how to use the void type as the return type of functions that do not return any value.</p>
+            <p><span><a href="#">Never Type</a></span> – learn how to use the <b style="color: red;">never</b> type that contains no value.</p>
+            <p><span><a href="#">Union Types</a></span> – guide you on how to store a value of one or several types in a variable with the union type.</p>
+            <p><span><a href="#">Type Aliases</a></span> – show you how to define new names for types using type aliases.</p>
+            <p><span><a href="#">String Literal Types</a></span> – learn how to define a type that accepts only a specified string literal.</p>
+            <p><span><a href="#">Type Inference</a></span> – explain where and how TypeScript infers types of variables.</p>
+            
+            <h2>Section 3. Control Flow Statements</h2>
+            The following tutorials refresh your control flow statement knowledge. If you are already familiar with these<br> statements in JavaScript, please feel free to skip this section.
+            
+            <p><span><a href="#">if…else</a></span> – learn how to execute code based on a condition.</p>
+            <p><span><a href="#">switch..case</a></span> – show you how to use the switch statement to allow a number of possible execution paths.</p>
+            <p><span><a href="#">for</a></span> – create a loop that executes a specified number of times.</p>
+            <p><span><a href="#">while</a></span> – create a pretest loop that executes as long as a condition is true.</p>
+            <p><span><a href="#">do…while</a></span> – learn how to create a posttest loop that executes until a condition is false.</p>
+            <p><span><a href="#">break</a></span> – show you how to use the break statement to terminate a loop or a switch.</p>
+            <p><span><a href="#">continue</a></span> – learn how to skip to the end of a loop and continue to the next iteration.</p>
+            
+            <h2>Section 4. Functions</h2>
+            <p><span><a href="#">Functions</a></span> – learn how to declare a function that uses type annotation in TypeScript.</p>
+            <p><span><a href="">Function types</a></span> – guide you on how to use function types to define types for functions.</p>
+            <p><span><a href="#">Optional Parameters</a></span> – show you how to define functions with optional parameters.</p>
+            <p><span><a href="#">Default Parameters</a></span> – introduce you to default parameters.</p>
+            <p><span><a href="">Rest Parameters</a></span> – use the rest parameters to handle an infinite number of arguments of a function.</p>
+            <p><span><a href="#">Function overloadings</a></span> – learn how to establish between parameter types and results of a function via function overloadings.</p>
+            
+            <h2>Section 5. Classes</h2>
+            <p><span><a href="">Classes</a></span> – learn how to construct a class in TypeScript.</p>
+            <p><span><a href="">Access Modifiers</a></span> – introduce you to private, protected, and public access modifiers.</p>
+            <p><span><a href="">The readonly Modifier</a></span> – learn how to use the readonly modifier to make class properties immutable.</p>
+            <p><span><a href="">Getters & Setters</a></span> – show you how to use the getters and setters to control the access of the class properties.</p>
+            <p><span><a href="#">Inheritance</a></span> – learn how to use the inheritance to reuse the functionality of another class.</p>
+            <p><span><a href="#">Static methods & properties</a></span> – define static methods and variables shared by all instances of a class.
+            <p><span><a href="#">Abstract Classes</a></span> – explain the abstract classes that define some common behaviors.</p>
+            
+            <h2>Section 6. Interfaces</h2>
+            <p><span><a href="">Interfaces</a></span> – introduce you to interfaces and how to use them for creating contracts within your code.</p>
+            <p><span><a href="#">Extending Interfaces</a></span> – learn how to extend an interface to create a combination of interfaces.</p>
+            <p><span><a href="">Interfaces vs. Abstract Classes</a></span> – explain to you the differences between interfaces and abstract classes.</p>
+            
+            <h2>Section 7. Advanced Types</h2>
+            <p><span><a href="#">Intersection Types</a></span> – show you how to create a new type that has all features of existing types.</p>
+            <p><span><a href="#">Type Guards</a></span> – learn how to use type guards to narrow the type of a variable within a conditional block.</p>
+            <p><span><a href="">Type Casting</a></span> – show you how to use type casting to convert a variable of one type to another.</p>
+            <p><span><a href="#">Type Assertions</a></span> – guide you on how to use a type assertion to tell the compiler to treat a value as a specified type.</p>
+            
+            <h2>Section 8. Generics</h2>
+            <p><span><a href="#">Introduction to TypeScript Generics</a></span> – learn how to use TypeScript generics to develop generic functions.</p>
+            <p><span><a href="#">Generic constraints</a></span> – show you how to add constraints to the generic types.</p>
+            <p><span><a href="#">Generic Classes</a></span> – guide you on how to develop generic classes.</p>
+            <p><span><a href="#">Generic Interfaces</a></span> – walk you through the steps for creating generic interfaces.</p>
+            
+            <h2>Section 9. Modules</h2>
+            <span><a href="#">TypeScript Modules</a></span> – introduce you to modules in TypeScript and how to use them in other modules.</p>
+            
+            <h2>Section 10. TypeScript in Node.js</h2>
+            <span>Node.js TypeScript</span> – how to set up a development environment for using TypeScript in the Node.js project.
+            </small>
+    </div>
+
+    <div class="sidebar">
+        <small>
+            <center><input type="search" placeholder="Search..."></center>
+            <p>GETTING STARTED</p>
+            <p><a href="#">What is TypeScript</a></p>
+            <p><a href="#">TypeScript Setup</a></p>
+            <p><a href="#"> TypeScript “Hello, World!”</a></p>
+            <p><a href="#">Why TypeScript</a></p>
+            
+            
+            <p>BASIC TYPES</p>
+            <p><a href="#">TypeScript Types</a></p>
+            <p><a href="#">Type Annotations</a></p>
+            <p><a href="#">Type Inference</a></p>
+            <p><a href="#">Boolean Type </a></p>
+            <p><a href="#">String Type</a></p>
+            <p><a href="#">Objct Type</a></p>
+            <p><a href="#">Array Type</a></p>
+            <p><a href="#">Tuple Type</a></p>
+            <p><a href="#"> Number Type</a></p>
+            <p><a href="#"> Never Type</a></p>
+            <p><a href="#">Enum Type</a></p>
+            <p><a href="#">Any Type</a></p>
+            <p><a href="#">Union Types</a></p>
+            <p><a href="#">Type Aliases</a></p>
+            <p><a href="#">String Literal Type</a></p>
+        
+            <p>CONTROL FLOW STATEMENTS</p>
+            <p><a href="#">if else</a></p>
+            <p><a href="#">switch case</a></p>
+            <p><a href="#">for</a></p>
+            <p><a href="#">while</a></p>
+            <p><a href="#">do while</a></p>
+            <p><a href="#">break</a></p>
+             
+            
+            <p>FUNCTIONS</p>
+            <p><a href="#">Function Type</a></p>
+            <p><a href="#">Functions</a></p>
+            <p><a href="#">Optional Parameters</a></p>
+            <p><a href="#">Default Parameters</a></p>
+            <p><a href="#">Rest Parameters</a></p>
+            <p><a href="#">Function Overloadings</a>
+            </p>
+             
+             
+            
+            <p>CLASSES</p>
+            <p><a href="#">Classes</a></p>
+            <p><a href="#">Access</a></p>
+            <p><a href="#">Readonly Properties</a></p>
+            <p><a href="#">Inheritances</a></p>
+            <p><a href="#">Static Methods and Properties</a></p>
+            <p><a href="#">Abstract Classes</a></p>
+             
+             
+            
+            <p>INTERFACES</p>
+            <p><a href="#">Interfaces</a></p>
+            <p><a href="#">Extending Interfaces</a></p>
+             
+            
+            <p>ADVANCED TYPES</p>
+            <p><a href="#">Intersection Types</a></p>
+            <p><a href="#">Type Guards</a></p>
+            <p><a href="#">Type Casting</a></p>
+            <p><a href="#">Type Assertions</a></p>
+            
+            <p>GENERICS</p>
+            <p><a href="#">Typescript generics</a>
+            <p><a href="#">Generic constraints</a></p>
+            <p><a href="#">Generic Interfaces</a></p>
+            <p><a href="#">Generic Classes</a></p>
+        
+        </small>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="conto">
+        <h3>ABOUT JAVASCRIPT TUTORIAL</h3>
+        The TypeScript Tutorial website helps you master Typescript <br> quickly via the practical examples and projects.
+        </div>
+        
+        <div class="conttw">
+        <h3>REFERENCES</h3>
+        <p><a href="#">Array Methods</a></p>
+        <p><a href="#">String Methods</a></p>
+        <p><a href="#">Regular Expressions</a></p>
+        
+        <h3>LATEST TUTORIALS</h3>
+        <p><a href="#">JavaScript Object.groupBy()Method</a></p>
+        <p><a href="#">Node.js TypeScript: How to Automate the Development Workflow</a></p>
+        <p><a href="#">Interfaces vs Abstract Classes</a></p>
+        <p><a href="#">TypeScript Types</a></p>
+        <p><a href="#">Why TypeScript</a></p>
+        <p><a href="#">TypeScript Modules</a></p>
+        
+        </div>
+        
+        <div class="conttr">
+        <h3>SITE LINKS</h3>
+        <p><a href="#">Donation ❤️</a></p>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Contact Us</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        </div>
+  </div>
+  <center style="background-color:#0E1241;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>
+</body>
+</html>
+ 
+
+ 
+ 
+ 
