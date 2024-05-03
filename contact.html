@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
     <link rel="icon" href="webber.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   <meta charset="UTF-8">
@@ -8,7 +9,7 @@
   <title>Contact</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
+    body {font-family: Inter;
   margin: 0;
    
 }
@@ -43,7 +44,7 @@
   flex: 5;
   background-color: #ccc;
   padding: 20px;
-  border: 2px solid #005CFF;
+  border: 2px solid #2727ce;
 }
 
 .links{float: right;
@@ -51,10 +52,10 @@
         
     }
 
-.conto{margin-left: 70px;}
-.conttw{margin-left:170px;}
-.conttr{margin-left:170px;}
-.footer{background-color:#005CFF;
+.conto{flex:6;}
+.conttw{flex:5;}
+.conttr{flex:3;}
+.footer{background-color:#2727ce;
     display: flex;
 }
 
@@ -113,7 +114,35 @@
   border-radius: 4px;
 }
 
-.send{background-color: #005CFF;}
+.send{background-color: #3853cc;
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    border: 2px solid #3853cc;
+}
+
+.name{height: 30px;
+    width: 350px;
+    border:2px solid #005CFF;
+    outline: #005CFF;
+    border-radius: 5px;
+}
+
+.email{height:30px;
+    width: 350px;
+    border:2px solid #3853cc;
+    outline: #3853cc;
+    border-radius: 5px;
+}
+
+.ms{height: 50px;
+    width: 700px;
+    font-size: 18px;
+    padding-bottom: 300px;
+    border: 2px solid #005CFF;
+    border-radius: 10px;
+    outline: #005CFF;
+}
   </style>
 </head>
 <body>
@@ -143,10 +172,10 @@
     <h1>Contact</h1>
     <p>If you have any suggestions regarding the tutorials on this website, please feel free to send us your feedback.</p>    
     
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <input type="submit" class="send"  value="Send">
+    <p><input type="text" class="name"></p>
+    <p><input type="email" class="email"></p>
+    <p><input type="text" class="ms"></p>
+    <p><input type="submit" class="send"  value="Send"></p>
 
 
 
@@ -154,77 +183,7 @@
 
     <div class="sidebar">
         <small>
-            <center><input type="search" class="search" placeholder="Search..."></center>
-            <p>GETTING STARTED</p>
-            <p><a href="#">What is TypeScript</a></p>
-            <p><a href="#">TypeScript Setup</a></p>
-            <p><a href="#"> TypeScript “Hello, World!”</a></p>
-            <p><a href="#">Why TypeScript</a></p>
-            
-            
-            <p>BASIC TYPES</p>
-            <p><a href="#">TypeScript Types</a></p>
-            <p><a href="#">Type Annotations</a></p>
-            <p><a href="#">Type Inference</a></p>
-            <p><a href="#">Boolean Type </a></p>
-            <p><a href="#">String Type</a></p>
-            <p><a href="#">Objct Type</a></p>
-            <p><a href="#">Array Type</a></p>
-            <p><a href="#">Tuple Type</a></p>
-            <p><a href="#"> Number Type</a></p>
-            <p><a href="#"> Never Type</a></p>
-            <p><a href="#">Enum Type</a></p>
-            <p><a href="#">Any Type</a></p>
-            <p><a href="#">Union Types</a></p>
-            <p><a href="#">Type Aliases</a></p>
-            <p><a href="#">String Literal Type</a></p>
-        
-            <p>CONTROL FLOW STATEMENTS</p>
-            <p><a href="#">if else</a></p>
-            <p><a href="#">switch case</a></p>
-            <p><a href="#">for</a></p>
-            <p><a href="#">while</a></p>
-            <p><a href="#">do while</a></p>
-            <p><a href="#">break</a></p>
-             
-            
-            <p>FUNCTIONS</p>
-            <p><a href="#">Function Type</a></p>
-            <p><a href="#">Functions</a></p>
-            <p><a href="#">Optional Parameters</a></p>
-            <p><a href="#">Default Parameters</a></p>
-            <p><a href="#">Rest Parameters</a></p>
-            <p><a href="#">Function Overloadings</a>
-            </p>
-             
-             
-            
-            <p>CLASSES</p>
-            <p><a href="#">Classes</a></p>
-            <p><a href="#">Access</a></p>
-            <p><a href="#">Readonly Properties</a></p>
-            <p><a href="#">Inheritances</a></p>
-            <p><a href="#">Static Methods and Properties</a></p>
-            <p><a href="#">Abstract Classes</a></p>
-             
-             
-            
-            <p>INTERFACES</p>
-            <p><a href="#">Interfaces</a></p>
-            <p><a href="#">Extending Interfaces</a></p>
-             
-            
-            <p>ADVANCED TYPES</p>
-            <p><a href="#">Intersection Types</a></p>
-            <p><a href="#">Type Guards</a></p>
-            <p><a href="#">Type Casting</a></p>
-            <p><a href="#">Type Assertions</a></p>
-            
-            <p>GENERICS</p>
-            <p><a href="#">Typescript generics</a>
-            <p><a href="#">Generic constraints</a></p>
-            <p><a href="#">Generic Interfaces</a></p>
-            <p><a href="#">Generic Classes</a></p>
+           
         
         </small>
     </div>

@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
 <link rel="icon" href="webber.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>webber-Javascript Tutorial</title>
   <style>
-    body {
+    body {font-family:inter;
       margin: 0; 
+      color: white;
     }
     span{color: #0E1241;}
     
     .header {
-      background-color:#005CFF;
+      background-color:#000000;
       color: #fff;
-      padding: 20px;    
+      height:60px;   
       position: fixed;
       width: 100%;
       top: 0;
       left: 0;
+      display: flex;
+      border-bottom:2px solid #7f9475;
     }
-     .footer{background-color:#005CFF;
+     .footer{background-color:#3853cc;
       color: #fff;
       padding: 20px;}
 
@@ -31,20 +35,23 @@
     
     .sidebar {
       flex: 1;
-      background-color: #f2f2f2;
+      background-color: #000000;
       padding: 20px;
-      border: 2px solid #005CFF;
+      border: 1px solid #7f9475;
+      font-family: inherit;
     }
     
     .content {
       flex: 5;
-      background-color: #ccc;
+      background-color: #000000;
       padding: 20px;
-      border: 2px solid #005CFF;
+      border: 1px solid #7f9475;
     }
 
-    .links{float: right;
-        margin-right: 70px; 
+    .links{ 
+        margin-right: 70px;
+        margin-top: 20px;
+        flex: 5; 
     }
 
     .hm{color: white;
@@ -95,17 +102,18 @@
    
 }
 .es:hover{text-decoration: underline;}
-.conto{margin-left: 70px;}
-.conttw{margin-left:170px;}
-.conttr{margin-left:170px;}
-.footer{background-color:#005CFF;
+
+.conto{flex:6;}
+.conttw{flex:5;}
+.conttr{flex:3;}
+.footer{background-color:#000000;
     display: flex;
 }
 
 .search{height:30px;
   width:220px;
   text-indent: 5px;
-  border:2px solid #005CFF;
+  border:2px solid #7f9475;
   border-radius: 4px;
 }
     </style>
@@ -115,16 +123,19 @@
 
     
         <div class="header">
-    <b style="font-size: 15px;">Webber Tutorial</b>
+          <div>
+            <img src="webber.jpg" style="height: 56px;border-radius:50%;flex: 5;margin-left: 20px;margin-top: 2px;">
+          </div>
+    <b style="font-size: 15px;flex: 5;margin-top: 10px;margin-left: 10px;"><b style="color: red;">Web</b>ber <br>Tutorial</b>
     <b class="links">
     <a href="webber.html" class="hm">HOME</a>
     <a href="typescriptt.html" class="ts">TYPESCRIPT</a>
-    <a href="JS BOM.html" class="jsb">JS BOM</a>
+    <a href="jsb.html" class="jsb">JS BOM</a>
     <a href="jsd.html" class="jsd">JS DOM</a>
-    <a href="#" class="st">SNIPPET</a>
-    <a href="#" class="ad">ADVANCED</a>
-    <a href="#" class="web">WEB API</a>
-    <a href="#" class="es">ES6</a>
+    <a href="sni.html" class="st">SNIPPET</a>
+    <a href="adv.html" class="ad">ADVANCED</a>
+    <a href="weba.html" class="web">WEB API</a>
+    <a href="es6.html" class="es">ES6</a>
     </b>
   </div>
 
@@ -462,7 +473,7 @@
             <p><a href="#">Privacy Policy</a></p>
             </div>
       </div>
-      <center style="background-color: #005CFF;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>
+      <center style="background-color: #000000;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>
   </div>
 
 </body>
