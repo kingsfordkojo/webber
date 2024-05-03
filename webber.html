@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
 <link rel="icon" href="webber.jpg">
   <meta charset="UTF-8">
@@ -37,7 +38,7 @@
       flex: 1;
       background-color: #000000;
       padding: 20px;
-      border: 1px solid #7f9475;
+      border: 1px solid #000000;
       font-family: inherit;
     }
     
@@ -45,7 +46,7 @@
       flex: 5;
       background-color: #000000;
       padding: 20px;
-      border: 1px solid #7f9475;
+      border: 1px solid #000000;
     }
 
     .links{ 
@@ -108,14 +109,27 @@
 .conttr{flex:3;}
 .footer{background-color:#000000;
     display: flex;
+    border-top:2px solid #fff;
 }
 
 .search{height:30px;
   width:220px;
   text-indent: 5px;
-  border:2px solid #7f9475;
+  border:2px solid red;
   border-radius: 4px;
+  background-color: #000000;
+  outline: red;
+  font-family:Roboto;
 }
+
+.sectnine{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
     </style>
    
 </head>
@@ -141,7 +155,7 @@
 
   <div class="container">
     <div class="sidebar">
-      Vertical Box 1
+      
     </div>
     <div class="content">
          
@@ -156,17 +170,20 @@
             </ul>
             <p>JavaScriptTutorial.net is a good place to start.</p>
               
+            <div class="sectnine">
             <h2>Section 1. Getting started</h2>
-            <span>What is JavaScript?</span> – introduce you to JavaScript and its history.
-            <p><span>Install a JavaScript source code editor</span> – learn how to install the Visual Studio Code for editing JavaScript code.</p>
+            <i class="fa-solid fa-play"></i><span>What is JavaScript?</span> – introduce you to JavaScript and its history.
+            <p><i class="fa-solid fa-play"></i><span>Install a JavaScript source code editor</span> – learn how to install the Visual Studio Code for editing JavaScript code.</p>
             
-            <span>Meet the Console Tab of Web Development 
+            <p><i class="fa-solid fa-play"></i><span>Meet the Console Tab of Web Development 
             Tools</span> – provide you with a basic introduction to the Console window on the web browsers.
-            <p><span>JavaScript Hello World</span> – learn how to execute the first JavaScript code that displays the famous <b style="color: red;">"Hello, World!"</b> message.</p>
+            <p><i class="fa-solid fa-play"></i><span>JavaScript Hello World</span> – learn how to execute the first JavaScript code that displays the famous <b style="color: red;">"Hello, World!"</b> message.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 2. Fundamentals</h2>
-            <p><span>Syntax</span> – explain the JavaScript syntax, including whitespace, statements, identifiers, keywords, expressions, and comments.</p>
-            <p><span>Variables</span> – show you how to declare variables.</p>
+            <p><i class="fa-solid fa-play"></i><span>Syntax</span> – explain the JavaScript syntax, including whitespace, statements, identifiers, keywords, expressions, and comments.</p>
+            <p><i class="fa-solid fa-play"></i><span>Variables</span> – show you how to declare variables.</p>
             <p><span>Data types</span> – introduce to you the JavaScript data types, including primitive and reference types.
             <p><span>Number</span> – learn how JavaScript uses the <b style="color: red;">Number</b> type to represent the integer and floating-point numbers.</p>
             <p><span>Numeric Separator</span> – show you how to make the numbers more readable by using underscores as numeric separators.</p>
@@ -177,6 +194,9 @@
             <p><span>Primitive vs. reference values</span> – understand two value types in JavaScript, including primitive and reference values, and the differences between them.</p>
             <p><span>Array</span> – introduce you to the Array type and how to manipulate array elements.</p>
             </p>
+          </div>
+
+            <div class="sectnine">
             <h2>Section 3. Operators</h2>
             <p><span>Arithmetic operators</span> – introduce to you the arithmetic operators including addition (+), subtraction (-),  multiplication (*), and division (/).</p>
             <p><span>Remainder operator</span> – show you how to use the remainder operator (%) to get the remainder left over when one value is divided by another value.</p>
@@ -187,7 +207,9 @@
             <p><span>Logical assignment operators</span> – introduce to you the logical assignment operators, including ||=, &&=, and ??=</p>
             <p><span>Nullish coalescing operator (??)</span> – accept two values and return the second value if the first one is null or undefined.
             <p><span>Exponentiation operator</span> – introduce you to the exponentiation operator (**) that calculates a base to the exponent power, which is similar to Math.pow() method.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 4. Control flow Statements</h2>
             <p><span>if</span> – show you how to use the if statement to execute a block if a condition is true.</p>
             <p><span>if…else</span> – learn how to execute a block of code based on a specified condition.
@@ -200,7 +222,9 @@
             <p><span>break</span> – learn how to prematurely terminate a loop.</p>
             <p><span>continue</span> – show you how to skip the current iteration of a loop and jump to the next one.</p>
             <p><span>Comma operator</span> – guide you on how to use the comma operator in a for loop to update multiple variables at once.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 5. Functions</h2>
             <p><span>Functions</span> – introduce you to functions in JavaScript.
             <p><span>Functions are first-class citizens</span> – learn how to store functions in the variables, pass functions into other functions as arguments, and return functions as values.
@@ -208,7 +232,9 @@
             <p><span>Pass-by-value</span> – understand how pass-by-value works in JavaScript.
             Recursive function – learn how to define recursive functions.
             <p><span>Default Parameters</span> – show you how to define default parameters for functions.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 6. Objects & Prototypes</h2>
             <p><span>Object Methods</span> – introduce you to the methods of an object.</p>
             <p><span>Constructor functions</span> – show you how to use constructor functions to define custom types in JavaScript.</p>
@@ -225,6 +251,9 @@
             <p><span>Object Destructuring</span> – learn how to assign properties of an object to variables.
             <p><span>Optional chaining operator (?.)</span> – simplify the way to access a property located deep within a chain of connected objects without having to check if each reference in the chain is null or undefined.</p>
             <p><span>Object literal syntax extensions</span> – provide a new way to define object literal.<p>
+            </div>
+
+            <div class="sectnine">
             <h2>Section 7. Classes</h2>
             <p><span>Class</span> – introduce you to the ES6 class syntax and how to declare a class.</p>
             <p><span>Getters and Setters</span> – define the getters and setters for a class using the get and set keywords.</p>
@@ -236,7 +265,9 @@
             <span>Static Properties</span> – show you how to define static properties shared by all instances of a class.</p>
             <p><span>Private Fields</span> – learn how to define private fields in a class.</p>
             <p><span>Private Methods</span> – show you how to define private methods in a class.</p>
-            
+            </div>
+
+            <div class="sectnine">
             <h2>Section 8. Advanced Functions</h2>
             <p><span>Function type</span> – introduce you to the Function type and its properties and methods.</p>
             <p><span>call()</span>– understand the call() method and learn how to use it effectively.</p>
@@ -249,7 +280,9 @@
             <p><span>Arrow functions: when you should not use</span> – learn when not to use the arrow functions.
             <p><span>Rest parameter</span> – introduce you to the rest parameters and how to use them effectively.</p>
             <p><span>Callback functions</span> – introduce you to the callback functions and learn how to use the callbacks to handle asynchronous operations.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 9. Promises & Async/Await</h2>
             <p><span>Promises</span> – learn about Javascript Promises, what they are, and how to use them effectively.</p>
             <p><span>Promise chaining</span> – show you how to execute multiple asynchronous operations in sequence.</p>
@@ -259,7 +292,9 @@
             <p><span>Promise.prototype.finally()</span> – execute a piece of code when the promise is settled, regardless of its outcome.</p>
             <p><span>Promise error handling</span> – guide you on how to handle errors in promises.</p>
             <p><span>async / await</span> – write asynchronous code in a clearer syntax.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 10. Iterators & Generators</h2>
             <p><span>Iterators</span> – introduce you to the iteration and iterator protocols.</p>
             <p><span>Generators</span> – develop functions that can pause midway and then continue from where they paused.
@@ -267,48 +302,66 @@
             <p><span>for…of</span> – learn how to use the for...of loop to iterate over elements of an iterable object.</p>
             <p><span>Asynchronous iterators</span> – learn how to use async iterators to access asynchronous data sources sequentially.</p>
             <p><span>Async generators</span> – show you how to create an async generator.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 11. Modules</h2>
             <p><span>Modules</span> – learn how to write modular JavaScript code.</p>
             <p><span>Export</span> – explain in detail how to export variables, functions, and classes from a module.</p>
             <p><span>Import</span> – guide you on how to import default exports and named exports from another module.</p>
             <p><span>Dynamic import</span> – show you how to import a module dynamically via the function-like object import().</p>
             <p><span>Top-level await</span> – explain the top-level await module and its use cases.</p>
+            </div>
+
+            <div class="sectnine">
             <h2>Section 12. Symbol</h2>
             <p><span>Symbol</span> – introduce you to a new primitive type called symbol in ES6
+            </div>
             
+              <div class="sectnine">
             <h2>Section 13. Collections</h2>
             <p><span>Map</span> – introduce you to the Map type that holds a collection of key-value pairs.
             <p><span>Set</span> – learn how to use the Set type that holds a collection of unique values.
+            </div>
             
+            <div class="sectnine">
             <h2>Section 14. Error handling</h2>
             <p><span>try…catch</span> – show you how to handle exceptions gracefully.</p>
             <p><span>try…catch…finally</span> – learn how to catch exceptions and execute a block whether the exceptions occur or not.
             <p><span>throw</span> – show you how to throw an exception.</p>
             <p><span>Optional catch binding</span> – omit the exception variable in the catch block.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 15. JavaScript var, let, and const</h2>
             <p><span>let</span> – declare block-scoped variables using the let keyword.</p>
             <p><span>let vs. var</span> – understand the differences between let and var.
             <p><span>const</span> – define constants using the const keyword.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 16. Proxy & Reflection</h2>
             <p><span>Proxy</span> – learn how to use the proxy object that wraps another object (target) and intercepts the fundamental operations of the target object.</p>
             <p><span>Reflection</span> – show you how to use ES6 Reflection API to manipulate variables, properties, and methods of objects at runtime.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 17. JavaScript Runtime</h2>
             <p><span>Execution Contexts</span> – understand execution contexts including global and function execution contexts.</p>
             <p><span>Call Stack</span> – understand the call stack.</p>
             <p><span>Event Loop</span> – show you how JavaScript handles asynchronous operations using the event loop.</p>
             <p><span>Hoisting</span> – learn how hoisting works in JavaScript.
             <p><span>Variable scopes</span> – introduce you to the variable scopes.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 18. Primitive Wrapper Types</h2>
             <p><span>Primitive wrapper types</span> – learn how primitive wrapper types work in JavaScript.</p>
             <p><span>Boolean</span> – introduce you to the Boolean primitive wrapper type.</p>
             <p><span>Number</span> – learn about the Number primitive wrapper type.</p>
             <p><span>BigInt</span> – introduce you to the BigInt type that represents the big integers.</p>
             <p><span>String type</span> – introduce you to the String type.</p>
+            </div>
             
     </div>
     <div class="sidebar">
@@ -470,7 +523,7 @@
             <p><a href="donate.html">Donation ❤️</a></p>
             <p><a href="#">About Us</a></p>
             <p><a href="contact.html">Contact Us</a></p>
-            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="privacypolicy.html">Privacy Policy</a></p>
             </div>
       </div>
       <center style="background-color: #000000;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>

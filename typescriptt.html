@@ -22,7 +22,7 @@
       top: 0;
       left: 0;
       display: flex;
-      border-bottom:2px solid #7f9475;
+      border-bottom:2px solid #ffffff;
     }
 
 .footer{background-color:#000000;
@@ -36,9 +36,11 @@
 
 .sidebar {
   flex: 1;
-  background-color: #000000;
+  background-color:#000000;
   padding: 20px;
-  border: 2px solid #005CFF;
+  border: 2px solid #000000;
+  font-family: Playfair Display;
+   
 }
 
 .links{ 
@@ -59,6 +61,7 @@
 .conttr{flex:3;}
 .footer{background-color:#000000;
     display: flex;
+    border-top:2px solid #ffffff;
 }
 
 .hm{color: white;
@@ -112,9 +115,57 @@
 .search{height:30px;
   width:220px;
   text-indent: 5px;
-  border:2px solid #005CFF;
+  border:2px solid red;
   border-radius: 4px;
+  background-color: #000000;
+  outline: red;
+  color: #ffffff;
+  font-family: ROBOTO;
 }
+
+.sectnine{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.secten{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:24px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#next{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-left:10px;
+padding-right: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+#next:hover{border: 1px solid red;}
+
+#pre{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-right:10px;
+padding-left: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+#pre:hover{border: 1px solid red;}
   </style>
 </head>
 <body>
@@ -141,7 +192,7 @@
              
     </div>
     <div class="content">
-             
+            <div class="sectnine">
             <h2>TypeScript Tutorial</h2>
             <p>TypeScript is typed JavaScript. TypeScript adds types to JavaScript to help you speed up the development by catching <br> errors before you even run the JavaScript code.</p>
             
@@ -159,13 +210,17 @@
             <ul>
             <li>Basic JavaScript knowledge. If you want to learn JavaScript, check out the <span><a href="webber.html">JavaScript Tutorial.</a></span></li>
             <li><span><a href="#">ECMAScript 2015 or ES6 knowledge.</a></span></li></ul>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 1. Getting Started</h2>
             <p><span><a href="#">What is TypeScript</a></span> – learn about what typescript is and its advantages over vanilla JavaScript.</p>
             <p><span><a href="#">Setting up the TypeScript development environment</a></span> – show you how to set up a TypeScript development environment to be more productive in TypeScript.</p>
             <p><span><a href="#">TypeScript Hello World</a></span> – walk you through the steps to create the first program in TypeScript called <b style="color:red;">Hello, World!</b></p>
             <p><span><a href="#">Why TypeScript</a></span> – clearly understand why you should use TypeScript.</p>
+            </div>
             
+             <div class="sectnine">
             <h2>Section 2. Basic Types</h2>
             <p><span><a href="#">Type Annotation</a></span> – learn how to use type annotation to define the static type for variables, function parameters, and return values.</p>
             <p><span><a href="#">Number</a></span> – learn about the numeric types including floating-point numbers and big integers.</p>
@@ -182,10 +237,12 @@
             <p><span><a href="#">Type Aliases</a></span> – show you how to define new names for types using type aliases.</p>
             <p><span><a href="#">String Literal Types</a></span> – learn how to define a type that accepts only a specified string literal.</p>
             <p><span><a href="#">Type Inference</a></span> – explain where and how TypeScript infers types of variables.</p>
+            </div>
+           
             
+            <div class="sectnine">
             <h2>Section 3. Control Flow Statements</h2>
             The following tutorials refresh your control flow statement knowledge. If you are already familiar with these<br> statements in JavaScript, please feel free to skip this section.
-            
             <p><span><a href="#">if…else</a></span> – learn how to execute code based on a condition.</p>
             <p><span><a href="#">switch..case</a></span> – show you how to use the switch statement to allow a number of possible execution paths.</p>
             <p><span><a href="#">for</a></span> – create a loop that executes a specified number of times.</p>
@@ -193,7 +250,9 @@
             <p><span><a href="#">do…while</a></span> – learn how to create a posttest loop that executes until a condition is false.</p>
             <p><span><a href="#">break</a></span> – show you how to use the break statement to terminate a loop or a switch.</p>
             <p><span><a href="#">continue</a></span> – learn how to skip to the end of a loop and continue to the next iteration.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 4. Functions</h2>
             <p><span><a href="#">Functions</a></span> – learn how to declare a function that uses type annotation in TypeScript.</p>
             <p><span><a href="">Function types</a></span> – guide you on how to use function types to define types for functions.</p>
@@ -201,39 +260,55 @@
             <p><span><a href="#">Default Parameters</a></span> – introduce you to default parameters.</p>
             <p><span><a href="">Rest Parameters</a></span> – use the rest parameters to handle an infinite number of arguments of a function.</p>
             <p><span><a href="#">Function overloadings</a></span> – learn how to establish between parameter types and results of a function via function overloadings.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 5. Classes</h2>
             <p><span><a href="">Classes</a></span> – learn how to construct a class in TypeScript.</p>
             <p><span><a href="">Access Modifiers</a></span> – introduce you to private, protected, and public access modifiers.</p>
             <p><span><a href="">The readonly Modifier</a></span> – learn how to use the readonly modifier to make class properties immutable.</p>
             <p><span><a href="">Getters & Setters</a></span> – show you how to use the getters and setters to control the access of the class properties.</p>
             <p><span><a href="#">Inheritance</a></span> – learn how to use the inheritance to reuse the functionality of another class.</p>
-            <p><span><a href="#">Static methods & properties</a></span> – define static methods and variables shared by all instances of a class.
+            <p><span><a href="#">Static methods & properties</a></span> – define static methods and variables shared by all instances of a class.</p>
             <p><span><a href="#">Abstract Classes</a></span> – explain the abstract classes that define some common behaviors.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 6. Interfaces</h2>
             <p><span><a href="">Interfaces</a></span> – introduce you to interfaces and how to use them for creating contracts within your code.</p>
             <p><span><a href="#">Extending Interfaces</a></span> – learn how to extend an interface to create a combination of interfaces.</p>
             <p><span><a href="">Interfaces vs. Abstract Classes</a></span> – explain to you the differences between interfaces and abstract classes.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 7. Advanced Types</h2>
             <p><span><a href="#">Intersection Types</a></span> – show you how to create a new type that has all features of existing types.</p>
             <p><span><a href="#">Type Guards</a></span> – learn how to use type guards to narrow the type of a variable within a conditional block.</p>
             <p><span><a href="">Type Casting</a></span> – show you how to use type casting to convert a variable of one type to another.</p>
             <p><span><a href="#">Type Assertions</a></span> – guide you on how to use a type assertion to tell the compiler to treat a value as a specified type.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 8. Generics</h2>
             <p><span><a href="#">Introduction to TypeScript Generics</a></span> – learn how to use TypeScript generics to develop generic functions.</p>
             <p><span><a href="#">Generic constraints</a></span> – show you how to add constraints to the generic types.</p>
             <p><span><a href="#">Generic Classes</a></span> – guide you on how to develop generic classes.</p>
             <p><span><a href="#">Generic Interfaces</a></span> – walk you through the steps for creating generic interfaces.</p>
+            </div>
             
+            <div class="sectnine">
             <h2>Section 9. Modules</h2>
             <span><a href="#">TypeScript Modules</a></span> – introduce you to modules in TypeScript and how to use them in other modules.</p>
+            </div>
             
+            <div class="secten">
             <h2>Section 10. TypeScript in Node.js</h2>
             <span>Node.js TypeScript</span> – how to set up a development environment for using TypeScript in the Node.js project.
-             
+            </div>
+
+            <center>
+            <a href="webber.html" id="pre">PREVIOUSLY</a> <a href="jsb.html" id="next">NEXT</a>
+            </center>
     </div>
 
     <div class="sidebar">
@@ -338,9 +413,9 @@
         
         <div class="conttr">
         <h3>SITE LINKS</h3>
-        <p><a href="#">Donation ❤️</a></p>
+        <p><a href="donate.html">Donation ❤️</a></p>
         <p><a href="#">About Us</a></p>
-        <p><a href="#">Contact Us</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
         <p><a href="#">Privacy Policy</a></p>
         </div>
   </div>

@@ -12,6 +12,7 @@
     body {font-family:Inter;
   margin: 0;
   color: white;
+  background-color: black;
    
 }
 
@@ -42,7 +43,8 @@
   flex: 1;
   background-color: #000000;
   padding: 20px;
-  border: 2px solid #005CFF;
+  border: 2px solid #000000;
+  font-family:Playfair Display;
 }
 
 .content {
@@ -62,6 +64,7 @@
 .conttr{flex:3;}
 .footer{background-color:#000000;
     display: flex;
+    border-top:2px solid #fff;
 }
 
 .hm{color: white;
@@ -119,6 +122,40 @@
   border:2px solid #005CFF;
   border-radius: 4px;
 }
+
+#next{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-left:10px;
+padding-right: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+
+#pre{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-right:10px;
+padding-left: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+
+.secten{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
   </style>
 </head>
 <body>
@@ -173,12 +210,13 @@
             <h2>Section 4. Functions</h2>
              <p><span><a href="#">Screen</a></span> - get the information about the screen on which the browser is running by using the screen object.</p>
             
+             <div class="secten">
             <h2>Section 5. History</h2>
             <p><span><a href="#">History</a></span> – manage the web browser’s history stack with the history object</p> 
+            </div>
             
-            
-            <a href="#">PREVIOUSLY</a>
-            <a href="#">UP NEXT</a>
+            <a href="typescriptt.html" id="pre">PREVIOUSLY</a>
+            <a href="jsd.html" id="next">UP NEXT</a>
     </div>
 
     <div class="sidebar">
