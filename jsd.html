@@ -14,6 +14,13 @@
    color: #fff;
 }
 
+span{color: #8116DE;
+      text-decoration: none;
+      margin-left: 5px;
+      font-family:Playfair Display;
+      font-size: 20px;
+    }
+
 .header {
       background-color:#000000;
       color: #fff;
@@ -23,12 +30,14 @@
       top: 0;
       left: 0;
       display: flex;
-      border-bottom:2px solid #7f9475;
+      border-bottom:1px solid #ffffff;
     }
 
 .footer{background-color:#000000;
       color: #fff;
-      padding: 20px;}
+      padding: 20px;
+      border-top:1px solid #ffffff;
+    }
 
 .container {
   display: flex;
@@ -39,20 +48,20 @@
   flex: 1;
   background-color: #000000;
   padding: 20px;
-  border: 2px solid #005CFF;
+  border: 2px solid #000000;
 }
 
 .content {
   flex: 5;
   background-color: #000000;
   padding: 20px;
-  border: 2px solid #005CFF;
+  border: 2px solid #000000;
 }
 
-.links{ 
-        margin-right: 70px;
+.links{
         margin-top: 20px;
         flex: 5; 
+        float: right;
     }
 
     .conto{flex:6;}
@@ -113,8 +122,54 @@
 .search{height:30px;
   width:220px;
   text-indent: 5px;
-  border:2px solid #005CFF;
+  border:2px solid red;
   border-radius: 4px;
+  background-color: #000000;
+  font-family:roboto;
+  color: #fff;
+  outline: red;
+}
+
+.sectnine{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.secten{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:24px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#next{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-left:10px;
+padding-right: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+
+#pre{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-right:10px;
+padding-left: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
 }
   </style>
 </head>
@@ -138,104 +193,115 @@
   </div>
 
   <div class="container">
-    <div class="sidebar">
-             
+    <div class="sidebar">       
     </div>
+
     <div class="content">
+      <p><a href="webber.html">Home</a> » JavaScript DOM
+
+      <div class="sectnine">
+      <h2>JavaScript DOM</h2>
+      This section covers the JavaScript Document Object Model (DOM) and shows you how to manipulate DOM elements effectively.</div>
+      
+      <div class="sectnine">
+      <h2>Section 1. Getting started</h2>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>Understanding the Document Object Model in JavaScript</span></a></p>
+      </div>
+      
+      <div class="sectnine">
+      <h2>Section 2. Selecting elements</h2>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>getElementById()</span></a> – select an element by id.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>getElementsByName()</span></a> – select elements by name.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>getElementsByTagName()</span></a>  – select elements by a tag name.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>getElementsByClassName()</span></a> – select elements by one or more class names.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>querySelector()</span></a>  – select elements by CSS selectors.</p>
+      </div>
+
+      <div class="sectnine">
+      <h2>Section 3. Traversing elements</h2>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>Get the parent element</span></a> – get the parent node of an element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>Get child elements</span></a> – get children of an element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>Get siblings of an element</span></a> – get siblings of an element.</p>
+      </div>
+
+      <div class="sectnine">
+      <h2>Section 4. Manipulating elements</h2>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>createElement()</span></a> – create a new element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>appendChild()  </span></a>– append a node to a list of child nodes of a specified parent node.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>textContent</span></a> – get and set the text content of a node.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>innerHTML</span></a> – get and set the HTML content of an element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>innerHTML vs. createElement</span></a> – explain the differences between innerHTML and createElement when it comes to <br>creating new elements.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>DocumentFragment</span></a> – learn how to compose DOM nodes and insert them into the active DOM tree.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>after()</span></a> – insert a node after an element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>append()</span></a> – insert a node after the last child node of a parent node.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>prepend()</span></a> – insert a node before the first child node of a parent node.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>insertAdjacentHTML()</span></a> – parse a text as HTML and insert the resulting nodes into the document at a specified position.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>replaceChild()</span></a> – replace a child element by a new element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>cloneNode()</span></a> – clone an element and all of its descendants.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>removeChild()</span></a> – remove child elements of a node.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>insertBefore()</span></a> – insert a new node before an existing node as a child node of a specified parent node.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>insertAfter() helper function</span></a> – insert a new node after an existing node as a child node of a specified parent node.</p>
+      </div>
+
+      <div class="sectnine">
+      <h2>Section 5. Working with Attributes</h2>
+      <p><i class="fa-solid fa-play"></i><a href="#">HTML Attributes & DOM Object’s Properties</span></a> – understand the relationship between HTML attributes & DOM object’s properties.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>setAttribute()</span></a> – set the value of a specified attribute on a element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>getAttribute()</span></a> – get the value of an attribute on an element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>removeAttribute()</span></a> – remove an attribute from a specified element.</p>
+      <p><i class="fa-solid fa-play"></i><a href="#"><span>hasAttribute()</span></a> – check if an element has a specified attribute or not.</p>
+  </div>
+
+
+
+
+  <div class="sectnine">
+    <h2>Section 6. Manipulating Element’s Styles</h2>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>style property</span></a> – get or set inline styles of an element.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>getComputedStyle()</span></a> – return the computed style of an element.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>className property</span></a> – return a list of space-separated CSS classes.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>classList property</span></a> – manipulate CSS classes of an element.
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Element’s width & height</span></a> – get the width and height of an element.</p>
+   </div>
+
+  <div class="sectnine">
+    <h2>Section 7. Working with Events</h2>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>JavaScript events</span></a> – introduce you to the JavaScript events, the event models, and how to handle events.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Handling events</span></a> – show you three ways to handle events in JavaScript.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Page Load Events</span></a> – learn about the page load and unload events.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>load event</span></a> – walk you through the steps of handling the load event originating from the document, image, and script elements.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>DOMContentLoaded</span></a> – learn how to use the DOMContentLoaded event correctly.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>beforeunload event</span></a> – guide you on how to show a confirmation dialog before users leave the page.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>unload event</span></a> – show you how to handle the unload event that fires when the page is completely unloaded.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Mouse events</span></a> – how to handle mouse events.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Keyboard events</span></a> – how to deal with keyboard events.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Scroll events</span></a> – how to handle scroll events effectively.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>scrollIntoView</span></a> – learn how to scroll an element into view.</p>
+    <p><i class="fa-solid fa-play"></i><a href="">Focus Events</a> – cover the focus events.
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>haschange event</span></a> – learn how to handle the event</p> when URL hash changes.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Event Delegation</span></a> – is a technique of levering event bubbling to handle events at a higher level in the DOM than the element on which the event originated.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>dispatchEvent</span></a> – learn how to generate an event from code and trigger it.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>Custom Events</span></a> – define a custom JavaScript event and attach it to an element.</p>
+    <p><i class="fa-solid fa-play"></i><a href="#"><span>MutationObserver </span></a>– monitor the DOM changes and invoke a callback when the changes occur.</p>
+  </div>
+
+  <div class="secten">
+ <h2>Section 8. Scripting Web Forms</h2>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>JavaScript Form</span></a> – learn how to handle form submit event and perform a simple validation for a web form.</p>
+<p><i class="fa-solid fa-play"></i><a href=""><span>Radio Button</a></span> – show you how to write the JavaScript for radio buttons.</p>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>Checkbox</span></a> – guide you on how to manipulate checkbox in JavaScript.</p>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>Select box</span></a> – learn how to handle the select box and its option in JavaScript.</p>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>Add / Remove Options</span></a> – show you how to dynamically add options to and remove options from a select box.</p>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>Removing Items from <b>select</b> element conditionally</span></a> – show you how to remove items from a <b style="color: red;">select</b> element conditionally.</p>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>Handling change event</span></a> – learn how to handle the change event of the input text, radio button, checkbox, and select elements.</p>
+<p><i class="fa-solid fa-play"></i><a href="#"><span>Handling input event</span></a> – handle the input event when the value of the input element changes.</p>
+</div>
              
-            <h2>TypeScript Tutorial</h2>
-            <p>TypeScript is typed JavaScript. TypeScript adds types to JavaScript to help you speed up the development by catching <br> errors before you even run the JavaScript code.</p>
-            
-            <p>TypeScript is an open-source programming language that builds on top of JavaScript. It works on any web browser,<br> any OS, and any environment that JavaScript runs.</p>
-            
-            <p>In this TypeScript tutorial, you’ll learn:</p>
-            
-            <ul><li>Why TypeScript offers a lot of benefits over vanilla JavaScript.</li>
-            <li>Understand what TypeScript truly is and how it works under the hood.</li>
-            <li>Use TypeScript and its rich features like Types, Classes, Interfaces, Modules, and much more.</li></ul>
-            
-            <h3>Prerequisites</h3>
-            
-            <p>To follow the tutorial, you need to have:</p>
-            <ul>
-            <li>Basic JavaScript knowledge. If you want to learn JavaScript, check out the <span><a href="webber.html">JavaScript Tutorial.</a></span></li>
-            <li><span><a href="#">ECMAScript 2015 or ES6 knowledge.</a></span></li></ul>
-            
-            <h2>Section 1. Getting Started</h2>
-            <p><span><a href="#">What is TypeScript</a></span> – learn about what typescript is and its advantages over vanilla JavaScript.</p>
-            <p><span><a href="#">Setting up the TypeScript development environment</a></span> – show you how to set up a TypeScript development environment to be more productive in TypeScript.</p>
-            <p><span><a href="#">TypeScript Hello World</a></span> – walk you through the steps to create the first program in TypeScript called <b style="color:red;">Hello, World!</b></p>
-            <p><span><a href="#">Why TypeScript</a></span> – clearly understand why you should use TypeScript.</p>
-            
-            <h2>Section 2. Basic Types</h2>
-            <p><span><a href="#">Type Annotation</a></span> – learn how to use type annotation to define the static type for variables, function parameters, and return values.</p>
-            <p><span><a href="#">Number</a></span> – learn about the numeric types including floating-point numbers and big integers.</p>
-            <p><span><a href="#">String</a></span> – show you how to use the string type in TypeScript.</p>
-            <p><span><a href="#">Boolean</a></span> – guide you on the boolean type and how to use it effectively.</p>
-            <p><span><a href="#">Object Type</a></span> – introduce you to the object type that represents non-primitive values.</p>
-            <p><span><a href="#">Array</a></span> – show you how to use an array and its operations.</p>
-            <p><span><a href="#">Tuple</a></span> – learn how to store a fixed number of elements with known types in a tuple.</p>
-            <p><a href="#">Enum</a> – show you how to define a group of named constants by using the enum type.</p>
-            <p><span><a href="#">Any Type</a></span> – learn how to use the <b style="color:red;">any</b> type to store a value of any type in a variable.</p>
-            <p><span><a href="#">Void type</a></span> – show you how to use the void type as the return type of functions that do not return any value.</p>
-            <p><span><a href="#">Never Type</a></span> – learn how to use the <b style="color: red;">never</b> type that contains no value.</p>
-            <p><span><a href="#">Union Types</a></span> – guide you on how to store a value of one or several types in a variable with the union type.</p>
-            <p><span><a href="#">Type Aliases</a></span> – show you how to define new names for types using type aliases.</p>
-            <p><span><a href="#">String Literal Types</a></span> – learn how to define a type that accepts only a specified string literal.</p>
-            <p><span><a href="#">Type Inference</a></span> – explain where and how TypeScript infers types of variables.</p>
-            
-            <h2>Section 3. Control Flow Statements</h2>
-            The following tutorials refresh your control flow statement knowledge. If you are already familiar with these<br> statements in JavaScript, please feel free to skip this section.
-            
-            <p><span><a href="#">if…else</a></span> – learn how to execute code based on a condition.</p>
-            <p><span><a href="#">switch..case</a></span> – show you how to use the switch statement to allow a number of possible execution paths.</p>
-            <p><span><a href="#">for</a></span> – create a loop that executes a specified number of times.</p>
-            <p><span><a href="#">while</a></span> – create a pretest loop that executes as long as a condition is true.</p>
-            <p><span><a href="#">do…while</a></span> – learn how to create a posttest loop that executes until a condition is false.</p>
-            <p><span><a href="#">break</a></span> – show you how to use the break statement to terminate a loop or a switch.</p>
-            <p><span><a href="#">continue</a></span> – learn how to skip to the end of a loop and continue to the next iteration.</p>
-            
-            <h2>Section 4. Functions</h2>
-            <p><span><a href="#">Functions</a></span> – learn how to declare a function that uses type annotation in TypeScript.</p>
-            <p><span><a href="">Function types</a></span> – guide you on how to use function types to define types for functions.</p>
-            <p><span><a href="#">Optional Parameters</a></span> – show you how to define functions with optional parameters.</p>
-            <p><span><a href="#">Default Parameters</a></span> – introduce you to default parameters.</p>
-            <p><span><a href="">Rest Parameters</a></span> – use the rest parameters to handle an infinite number of arguments of a function.</p>
-            <p><span><a href="#">Function overloadings</a></span> – learn how to establish between parameter types and results of a function via function overloadings.</p>
-            
-            <h2>Section 5. Classes</h2>
-            <p><span><a href="">Classes</a></span> – learn how to construct a class in TypeScript.</p>
-            <p><span><a href="">Access Modifiers</a></span> – introduce you to private, protected, and public access modifiers.</p>
-            <p><span><a href="">The readonly Modifier</a></span> – learn how to use the readonly modifier to make class properties immutable.</p>
-            <p><span><a href="">Getters & Setters</a></span> – show you how to use the getters and setters to control the access of the class properties.</p>
-            <p><span><a href="#">Inheritance</a></span> – learn how to use the inheritance to reuse the functionality of another class.</p>
-            <p><span><a href="#">Static methods & properties</a></span> – define static methods and variables shared by all instances of a class.
-            <p><span><a href="#">Abstract Classes</a></span> – explain the abstract classes that define some common behaviors.</p>
-            
-            <h2>Section 6. Interfaces</h2>
-            <p><span><a href="">Interfaces</a></span> – introduce you to interfaces and how to use them for creating contracts within your code.</p>
-            <p><span><a href="#">Extending Interfaces</a></span> – learn how to extend an interface to create a combination of interfaces.</p>
-            <p><span><a href="">Interfaces vs. Abstract Classes</a></span> – explain to you the differences between interfaces and abstract classes.</p>
-            
-            <h2>Section 7. Advanced Types</h2>
-            <p><span><a href="#">Intersection Types</a></span> – show you how to create a new type that has all features of existing types.</p>
-            <p><span><a href="#">Type Guards</a></span> – learn how to use type guards to narrow the type of a variable within a conditional block.</p>
-            <p><span><a href="">Type Casting</a></span> – show you how to use type casting to convert a variable of one type to another.</p>
-            <p><span><a href="#">Type Assertions</a></span> – guide you on how to use a type assertion to tell the compiler to treat a value as a specified type.</p>
-            
-            <h2>Section 8. Generics</h2>
-            <p><span><a href="#">Introduction to TypeScript Generics</a></span> – learn how to use TypeScript generics to develop generic functions.</p>
-            <p><span><a href="#">Generic constraints</a></span> – show you how to add constraints to the generic types.</p>
-            <p><span><a href="#">Generic Classes</a></span> – guide you on how to develop generic classes.</p>
-            <p><span><a href="#">Generic Interfaces</a></span> – walk you through the steps for creating generic interfaces.</p>
-            
-            <h2>Section 9. Modules</h2>
-            <span><a href="#">TypeScript Modules</a></span> – introduce you to modules in TypeScript and how to use them in other modules.</p>
-            
-            <h2>Section 10. TypeScript in Node.js</h2>
-            <span>Node.js TypeScript</span> – how to set up a development environment for using TypeScript in the Node.js project.
+            <a href="typescriptt.html" id="pre">PREVIOUSLY</a>
+            <a href="jsd.html" id="next">UP NEXT</a>
              
     </div>
+    
 
     <div class="sidebar">
         <small>
@@ -323,26 +389,26 @@
         
         <div class="conttw">
         <h3>REFERENCES</h3>
-        <p><a href="#">Array Methods</a></p>
-        <p><a href="#">String Methods</a></p>
-        <p><a href="#">Regular Expressions</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Array Methods</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">String Methods</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Regular Expressions</a></p>
         
         <h3>LATEST TUTORIALS</h3>
-        <p><a href="#">JavaScript Object.groupBy()Method</a></p>
-        <p><a href="#">Node.js TypeScript: How to Automate the Development Workflow</a></p>
-        <p><a href="#">Interfaces vs Abstract Classes</a></p>
-        <p><a href="#">TypeScript Types</a></p>
-        <p><a href="#">Why TypeScript</a></p>
-        <p><a href="#">TypeScript Modules</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">JavaScript Object.groupBy()Method</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Node.js TypeScript: How to Automate the Development Workflow</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Interfaces vs Abstract Classes</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">TypeScript Types</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Why TypeScript</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">TypeScript Modules</a></p>
         
         </div>
         
         <div class="conttr">
         <h3>SITE LINKS</h3>
-        <p><a href="#">Donation ❤️</a></p>
-        <p><a href="#">About Us</a></p>
-        <p><a href="#">Contact Us</a></p>
-        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="donate.html" style="color: #ffffff;text-decoration: none;">Donation ❤️</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">About Us</a></p>
+        <p><a href="contact.html" style="color: #ffffff;text-decoration: none;">Contact Us</a></p>
+        <p><a href="privacypolicy.html" style="color: #ffffff;text-decoration: none;">Privacy Policy</a></p>
         </div>
   </div>
   <center style="background-color:#000000;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>

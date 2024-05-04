@@ -12,18 +12,21 @@
     body {font-family: Inter;
           margin: 0;
           color: white;
+          background-color: #000000;
    
 }
 
-.header{
-  background-color: #000000;
-  color: #fff;
-  padding: 20px;
-  top: 0%;
-  left: 0%;
-  position: fixed;
-  width: 100%;
-}
+.header {
+      background-color:#000000;
+      color: #fff;
+      height:60px;   
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      border-bottom:1px solid #ffffff;
+    }
 
 .footer{background-color:#005CFF;
       color: #fff;
@@ -47,17 +50,20 @@
   padding: 20px;
   border: 2px solid #000000;
 }
-
-.links{float: right;
+ 
+.links{ 
         margin-right: 70px;
-        
+        margin-top: 20px;
+        flex: 5; 
     }
+ 
 
 .conto{flex:6;}
 .conttw{flex:5;}
 .conttr{flex:3;}
 .footer{background-color:#000000;
     display: flex;
+    border-top:1px solid #ffffff;
 }
 
 .hm{color: white;
@@ -108,12 +114,7 @@
 }
 .es:hover{text-decoration: underline;}
 
-.search{height:30px;
-  width:220px;
-  text-indent: 5px;
-  border:2px solid #005CFF;
-  border-radius: 4px;
-}
+ 
 
 .send{background-color: #3853cc;
     height: 30px;
@@ -124,32 +125,44 @@
 
 .name{height: 30px;
     width: 350px;
-    border:2px solid #005CFF;
-    outline: #005CFF;
+    border:2px solid red;
+    outline: red;
     border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family:Playfair Display;
 }
 
 .email{height:30px;
     width: 350px;
-    border:2px solid #3853cc;
-    outline: #3853cc;
+    border:2px solid red;
+    outline: red;
     border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family:Playfair Display;
 }
 
 .ms{height: 50px;
     width: 700px;
     font-size: 18px;
     padding-bottom: 300px;
-    border: 2px solid #005CFF;
+    border: 2px solid red;
     border-radius: 10px;
-    outline: #005CFF;
+    outline: red;
+    background-color: #000000;
+    color: #ffffff;
+    font-family:Playfair Display;
 }
   </style>
 </head>
 <body>
 
   <div class="header">
-    <b style="font-size: 15px;">Webber Tutorial</b>
+    <div>
+      <img src="webber.jpg" style="height: 56px;border-radius:50%;flex: 5;margin-left: 20px;margin-top: 2px;">
+    </div>
+    <b style="font-size: 15px;flex: 5;margin-top: 10px;margin-left: 10px;"><b style="color: red;">Web</b>ber <br>Tutorial</b>
     <b class="links">
     <a href="webber.html" class="hm">HOME</a>
     <a href="typescriptt.html" class="ts">TYPESCRIPT</a>
@@ -173,9 +186,9 @@
     <h1>Contact</h1>
     <p>If you have any suggestions regarding the tutorials on this website, please feel free to send us your feedback.</p>    
     
-    <p><input type="text" class="name"></p>
-    <p><input type="email" class="email"></p>
-    <p><input type="text" class="ms"></p>
+    <p><b style="font-family:Playfair Display; font-size: 25px;">Name</b><br><input type="text" class="name"></p>
+    <p><b style="font-family:Playfair Display; font-size: 25px;">Email  Address</b><br><input type="email" class="email"></p>
+    <p><b style="font-family:Playfair Display; font-size: 25px;">Message:</b><br><input type="text" class="ms"></p>
     <p><input type="submit" class="send"  value="Send"></p>
 
 
