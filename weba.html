@@ -12,7 +12,15 @@
     body {font-family:inter;
   margin: 0;
   color: #fff; 
+  background-color: #000000;
 }
+
+span{color: #8116DE;
+      text-decoration: none;
+      margin-left: 5px;
+      font-family:Playfair Display;
+      font-size: 20px;
+    }
 
 .header {
       background-color:#000000;
@@ -26,7 +34,7 @@
       border-bottom:1px solid #ffffff;
     }
 
-  span{}
+  
 
 .footer{background-color:#000000;
       color: #fff;
@@ -51,8 +59,7 @@
   border: 2px solid #000000;
 }
 
-.links{ 
-        margin-right: 70px;
+.links{
         margin-top: 20px;
         flex: 5; 
     }
@@ -125,6 +132,49 @@
   font-family:Roboto;
   color: #ffffff;
 }
+
+.sectnine{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.secten{background-color: #3a313169;
+  padding-top:2px;
+  padding-bottom:24px;
+  padding-left:10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+#next{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-left:10px;
+padding-right: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+#next:hover{border: 1px solid red;}
+
+#pre{background-color: #000000;
+text-decoration: none;
+font-family:Sedan SC;
+color: #ffffff;
+font-size: 15px;
+padding-right:10px;
+padding-left: 300px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+border:1px solid white;
+}
+#pre:hover{border: 1px solid red;}
   </style>
 </head>
 <body>
@@ -135,7 +185,7 @@
     </div>
     <b style="font-size: 15px;flex: 5;margin-top: 10px;margin-left: 10px;"><b style="color: red;">Web</b>ber <br>Tutorial</b>
     <b class="links">
-    <a href="webber.html" class="hm">HOME</a>
+    <a href="index.html" class="hm">HOME</a>
     <a href="typescriptt.html" class="ts">TYPESCRIPT</a>
     <a href="jsb.html" class="jsb">JS BOM</a>
     <a href="jsd.html" class="jsd">JS DOM</a>
@@ -151,55 +201,71 @@
              
     </div>
     <div class="content">
-             
+             <div class="sectnine">
             <h2>Web API</h2>
             <p>This section introduces you to the Web APIs specified in the HTML5 specification. These Web APIs allow you to use the<br> modern functions provided by the web browsers in your web applications.</p>
+            </div>
             
-            
-            
+            <div class="sectnine">
             <h2>Section 1. Client Storage</h2>
             <p><i class="fa-solid fa-play"></i><span><a href="#">Cookies</a></span> –  learn about HTTP cookies and how to use JavaScript to manage cookies more effectively.</p>
             <p><i class="fa-solid fa-play"></i><span><a href="#">localStorage</a></span> – introduce you to the Storage type and show you how to use the localStorage to store the client-side data.
             </p>
             <p><i class="fa-solid fa-play"></i><span><a href="#">sessionStorage </a></span> – show you how to use the sessionStorage <b style="color:red;">sessionStorage</b> to store data for a session </p>
             <p><i class="fa-solid fa-play"></i><a href="#">IndexedStorage</a></span> - learn about IndexedDB and how to use it to create web applications that work both online and <br>offline.</p>
+            </div>
+
+            <div class="sectnine">
             <h2>Section 2. Basic Types</h2>
              <p><i class="fa-solid fa-play"></i><span><a href="#">FormData</a></span> - construct a set of key/value pairs representing form fields & values.</p>
+             </div>
             
+             <div class="sectnine">
             <h2>Section 3. Drag-and-Drop API</h2>
             <p><i class="fa-solid fa-play"></i><span><a href>Drag and Drop API</a></span> - enable web applications to use the drag-and-drop feature in the web browsers.</p>
-            <p><span><a href="#">FileReader Api</a></span> - introduce to you the FileReader API and show you how to combine it with the Drag&Drop API to build an image upload application.</p>
-            
+            <p><i class="fa-solid fa-play"></i><span><a href="#">FileReader Api</a></span> - introduce to you the FileReader API and show you how to combine it with the Drag&Drop API to build an image upload application.</p>
+            </div>
+
+            <div class="sectnine">
             <h2>Section 4. Geolocattion API</h2>
             <p><i class="fa-solid fa-play"></i><span><a href="#">Geolocattion API</a></span> – allow the web application to get your current locations if you allow</p>
+            </div>
           
-            
+            <div class="sectnine">
             <h2>Section 5. Notification API</h2>
             <p><i class="fa-solid fa-play"></i><span><a href="">Notification API</a></span> –  learn how to display desktop notifications to users </p>
+            </div>
            
-           
+           <div class="sectnine">
             <h2>Section 6. Canvas API</h2>
             <p><i class="fa-solid fa-play"></i><span><a href="#">Basic Canvas</a></span> – learn about the HTML5  canvas element and how to use the Canvas API to draw shapes.</p>
-              Draw a filled rectangle – show you how to draw a filled rectangle by the fillRect() method.
-              Draw an outlined rectangle – learn how to draw an outlined rectangle by using the strokeRect() method.
-              Erase a rectangular area on a canvas – show you to to use the clearRect() to set pixels in a rectangular area to transparent black.
+              <p><i class="fa-solid fa-play"></i><a href="#"><span>Draw a filled rectangle</span></a> – show you how to draw a filled rectangle by the fillRect() method.</p>
+              <p><i class="fa-solid fa-play"></i><a href="#"><span>Draw an outlined rectangle</span></a> – learn how to draw an outlined rectangle by using the strokeRect() method.</p>
+              <p><i class="fa-solid fa-play"></i><a href="#"><span>Erase a rectangular area on a canvas</span></a> – show you to to use the clearRect() to set pixels in a rectangular area to transparent black.</p>
               <p><i class="fa-solid fa-play"></i><span><a href="#">Draw lines</span></a> – draw a line from one point to another.</p>
-              Draw text – show you how to draw a text string on to a canvas.
+              <p><i class="fa-solid fa-play"></i><a href="#"><span>Draw text</span></a> – show you how to draw a text string on to a canvas.</p>
               <p><i class="fa-solid fa-play"></i><span><a href="#">Translate</a></span>– learn how to move the origin of the canvas to the new position.</p>
               <p><i class="fa-solid fa-play"></i><span><a href="#">Rotate</a></span> – add a rotation transformation to rotate a drawing object.</p>
               <p><i class="fa-solid fa-play"></i><span><a href="#">Scale</a></span> – add a scaling transformation to the canvas units horizontally and/or vertically.</p>
+              </div>
             
+              <div class="sectnine">
             <h2>Section 7. History API</h2>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">pushState</a></span> – learn how to use the history.pushState() method.
-            
+            <p><i class="fa-solid fa-play"></i><span><a href="#">pushState</a></span> – learn how to use the history.pushState() method.</p>
+            </div>
+
+              <div class="secten">
             <h2>Section 8. Network Request</h2>
             <p><i class="fa-solid fa-play"></i><span><a href="#">Fetch API</a></span> – learn how to make asynchronous requests to a remote resource from the web browsers.</p>
-            
+            </div>
+            <center>
+              <a href="adv.html" id="pre">PREVIOUSLY</a> <a href="es6.html" id="next">NEXT</a>
+              </center>
          
     </div>
 
     <div class="sidebar">
-        <small>
+        <small><div class="sidelink">
             <center><input type="search" class="search" placeholder="Search..."></center>
             <p>GETTING STARTED</p>
             <p><a href="#">What is TypeScript</a></p>
@@ -271,7 +337,7 @@
             <p><a href="#">Generic constraints</a></p>
             <p><a href="#">Generic Interfaces</a></p>
             <p><a href="#">Generic Classes</a></p>
-        
+            </div>
         </small>
     </div>
   </div>
@@ -284,26 +350,26 @@
         
         <div class="conttw">
         <h3>REFERENCES</h3>
-        <p><a href="#">Array Methods</a></p>
-        <p><a href="#">String Methods</a></p>
-        <p><a href="#">Regular Expressions</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Array Methods</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">String Methods</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Regular Expressions</a></p>
         
         <h3>LATEST TUTORIALS</h3>
-        <p><a href="#">JavaScript Object.groupBy()Method</a></p>
-        <p><a href="#">Node.js TypeScript: How to Automate the Development Workflow</a></p>
-        <p><a href="#">Interfaces vs Abstract Classes</a></p>
-        <p><a href="#">TypeScript Types</a></p>
-        <p><a href="#">Why TypeScript</a></p>
-        <p><a href="#">TypeScript Modules</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">JavaScript Object.groupBy()Method</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Node.js TypeScript: How to Automate the Development Workflow</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Interfaces vs Abstract Classes</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">TypeScript Types</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Why TypeScript</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">TypeScript Modules</a></p>
         
         </div>
         
         <div class="conttr">
         <h3>SITE LINKS</h3>
-        <p><a href="donate.html">Donation ❤️</a></p>
-        <p><a href="#">About Us</a></p>
-        <p><a href="contact.html">Contact Us</a></p>
-        <p><a href="privacypolicy.html">Privacy Policy</a></p>
+        <p><a href="donate.html" style="color: #ffffff;text-decoration: none;">Donation ❤️</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">About Us</a></p>
+        <p><a href="contact.html" style="color: #ffffff;text-decoration: none;">Contact Us</a></p>
+        <p><a href="privacypolicy.html" style="color: #ffffff;text-decoration: none;">Privacy Policy</a></p>
         </div>
   </div>
   <center style="background-color:#000000;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>
