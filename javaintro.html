@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
-    <link rel="icon" href="webber.jpg">
+  <link rel="icon" href="webber.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>webber-Javascript Tutorial</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {font-family:Inter;
+    body {font-family:inter;
   margin: 0;
-  color: white;
-  background-color: black;
-   
+  color: #fff;
 }
- 
-span{color: #8116DE;
-      text-decoration: none;
-      margin-left: 5px;
-      font-family:Playfair Display;
-      font-size: 20px;
-    }
 
-.header{
+.header {
       background-color:#000000;
       color: #fff;
       height:60px;   
@@ -32,9 +22,8 @@ span{color: #8116DE;
       top: 0;
       left: 0;
       display: flex;
-      border-bottom:2px solid #ffffff;
-
-}
+      border-bottom:2px solid #7f9475;
+    }
 
 .footer{background-color:#000000;
       color: #fff;
@@ -43,39 +32,38 @@ span{color: #8116DE;
 .container {
   display: flex;
   margin-top: 50px;
-  
 }
 
 .sidebar {
   flex: 1;
-  background-color: #000000;
+  background-color:#000000;
   padding: 20px;
   border: 2px solid #000000;
-  font-family:Playfair Display;
 }
 
 .content {
-  flex: 5;
+  flex:  5;
   background-color: #000000;
   padding: 20px;
-  border: 2px solid #000000;
+  border: 2px solid  black;
 }
-.links{ 
-         margin-top:20px;
+
+.links{ margin-top: 20px;
         flex: 5; 
     }
 
-    .conto{flex:6;}
+.conto{flex:6;}
 .conttw{flex:5;}
 .conttr{flex:3;}
 .footer{background-color:#000000;
     display: flex;
-    border-top:2px solid #fff;
+    border-top: 1px solid white;
 }
 
 .hm{color: white;
   text-decoration: none;
   margin-right: 8px;
+  text-decoration: underline;
 }
 .hm:hover{text-decoration: underline;}
 
@@ -85,10 +73,11 @@ span{color: #8116DE;
 }
 .ts:hover{text-decoration: underline;}
 
+ 
+
 .jsb{color: white;
   text-decoration: none;
   margin-right: 8px;
-  text-decoration: underline;
 }
 .jsb:hover{text-decoration: underline;}
 
@@ -101,6 +90,7 @@ span{color: #8116DE;
 .st{color: white;
   text-decoration: none;
   margin-right: 8px;
+  
 }
 .st:hover{text-decoration: underline;}
 
@@ -128,9 +118,9 @@ span{color: #8116DE;
   border:2px solid red;
   border-radius: 4px;
   background-color: #000000;
-  font-family:roboto;
   outline: red;
   color: #ffffff;
+  font-family: roboto;
 }
 
 #next{background-color: #000000;
@@ -145,6 +135,7 @@ padding-bottom: 10px;
 border-radius: 10px;
 border:1px solid white;
 }
+#next:hover{border: 1px solid red;}
 
 #pre{background-color: #000000;
 text-decoration: none;
@@ -158,6 +149,7 @@ padding-bottom: 10px;
 border-radius: 10px;
 border:1px solid white;
 }
+#pre:hover{border: 1px solid red;}
 
 .sectnine{background-color: #3a313169;
   padding-top:2px;
@@ -174,6 +166,12 @@ border:1px solid white;
   border-radius: 5px;
   margin-bottom: 30px;
 }
+
+.linkz{text-decoration: none;
+  color: #ffffff;
+   
+  
+}
   </style>
 </head>
 <body>
@@ -182,8 +180,7 @@ border:1px solid white;
     <div>
       <img src="webber.jpg" style="height: 56px;border-radius:50%;flex: 5;margin-left: 20px;margin-top: 2px;">
     </div>
-<b style="font-size: 15px;flex: 5;margin-top: 10px;margin-left: 10px;"><b style="color: red;">Web</b>ber <br>Tutorial</b>
-       
+    <b style="font-size: 15px;flex: 5;margin-top: 10px;margin-left: 10px;"><b style="color: red;">Web</b>ber <br>Tutorial</b>
     <b class="links">
     <a href="index.html" class="hm">HOME</a>
     <a href="typescriptt.html" class="ts">TYPESCRIPT</a>
@@ -201,84 +198,96 @@ border:1px solid white;
              
     </div>
     <div class="content">
-           
-      <div class="sectnine">
-            <h2>JavaScript BOM</h2>
-            <p>The Browser Object Model (BOM) is the core of JavaScript on the web. The BOM provides you with objects that expose the <br>web browser’s functionality.</p>
-            </div>
-            
-            <div class="sectnine">
-            <h2>Section 1. Window</h2>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Window</a></span> - understand the <span>window</span> object.</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Alert</a> - </span>display an alert dialog</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Confirm</a></span> - display a modal dialog with a question</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Prompt</a></span> - prompt the user to input some text</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">setTimeout</a></span> set a timer and execute a callback function once the timer expires.</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">setInterval</a></span> - execute a callback function repeatedly with a fixed delay between each call</p>
-            </div>
-
+        <b style="color:#8116DE;"><a href="webber.html" style="text-decoration: none;">Home</a></b> »  <b style="color:#8116DE;"><a href="webber.html" style="text-decoration: none;">JavaScript Tutorial</a></b> » What is JavaScript
+            <h2>JavaScript  Introduction</h2>
              
+<p>This page contains some examples of what JavaScript can do.</p>
+
+<h2>JavaScript Can Change HTML Content</h2>
+<p>One of many JavaScript HTML methods is getElementById().
+
+The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+
+<h2>Example</h2>
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+<p>JavaScript accepts both double and single quotes:</p>
+
+<h2>Example</h2>
+document.getElementById('demo').innerHTML = 'Hello JavaScript';
+JavaScript Can Change HTML Attribute Values
+In this example JavaScript changes the value of the src (source) attribute of an <img> tag:
+
+The Light Bulb
+Turn on the light  Turn off the light
+
+ADVERTISEMENT
+
+JavaScript Can Change HTML Styles (CSS)
+Changing the style of an HTML element, is a variant of changing an HTML attribute:
+
+Example
+document.getElementById("demo").style.fontSize = "35px";
+JavaScript Can Hide HTML Elements
+Hiding HTML elements can be done by changing the display style:
+
+Example
+document.getElementById("demo").style.display = "none";
+JavaScript Can Show HTML Elements
+Showing hidden HTML elements can also be done by changing the display style:
+
+<h2>Example</h2>
+<p>document.getElementById("demo").style.display = "block";</p>
+
+<h2>Did You Know?</h2>
+<p>JavaScript and Java are completely different languages, both in concept and design.</p>
+
+<p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.</p>
+
+<p>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p>
+
+ 
+<p>
+<a href="#" id="pre">Previous Section</a> 
+<a href="#" id="next">Next Section</a>
+  </p>      
+ 
        
-            <div class="sectnine">
-            <h2>Section 2. Location</h2>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Location</a></span> - learn how to retrieve query string parameters.</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Get query string parameters</a></span> - learn how to retrieve query string parameters.</p>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Redirect to a new URL </a></span> - learn how to retrieve query string parameters.</p>
-            </div>
-            
-            <div class="sectnine">
-            <h2>Section 3. Control Flow Statements</h2>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">Navigator</a></span> - query the information and capabilities of the browser using the navigator object.</p>
-            </div>
-            
-            <div class="sectnine">
-            <h2>Section 4. Functions</h2>
-             <p><i class="fa-solid fa-play"></i><span><a href="#">Screen</a></span> - get the information about the screen on which the browser is running by using the screen object.</p>
-             </div>
-            
-             <div class="secten">
-            <h2>Section 5. History</h2>
-            <p><i class="fa-solid fa-play"></i><span><a href="#">History</a></span> – manage the web browser’s history stack with the history object</p> 
-            </div>
-            
-            <a href="typescriptt.html" id="pre">PREVIOUSLY</a>
-            <a href="jsd.html" id="next">UP NEXT</a>
     </div>
 
     <div class="sidebar">
         <small>
             <center><input type="search" class="search" placeholder="Search..."></center>
             <p>GETTING STARTED</p>
-            <p><a href="#">What is TypeScript</a></p>
-            <p><a href="#">TypeScript Setup</a></p>
-            <p><a href="#"> TypeScript “Hello, World!”</a></p>
-            <p><a href="#">Why TypeScript</a></p>
+            <p><a href="#" class="linkz">What is TypeScript</a></p>
+            <p><a href="#" class="linkz">TypeScript Setup</a></p>
+            <p><a href="#" class="linkz"> TypeScript “Hello, World!”</a></p>
+            <p><a href="#" class="linkz">Why TypeScript</a></p>
             
             
             <p>BASIC TYPES</p>
             <p><a href="#">TypeScript Types</a></p>
-            <p><a href="#">Type Annotations</a></p>
-            <p><a href="#">Type Inference</a></p>
-            <p><a href="#">Boolean Type </a></p>
-            <p><a href="#">String Type</a></p>
-            <p><a href="#">Objct Type</a></p>
-            <p><a href="#">Array Type</a></p>
-            <p><a href="#">Tuple Type</a></p>
-            <p><a href="#"> Number Type</a></p>
-            <p><a href="#"> Never Type</a></p>
-            <p><a href="#">Enum Type</a></p>
-            <p><a href="#">Any Type</a></p>
-            <p><a href="#">Union Types</a></p>
-            <p><a href="#">Type Aliases</a></p>
-            <p><a href="#">String Literal Type</a></p>
+            <p><a href="#" style="text-decoration: none;color: #ffffff;">Type Annotations</a></p>
+            <p><a href="#" style="text-decoration: none;color: #ffffff;">Type Inference</a></p>
+            <p><a href="#" class="linkz">Boolean Type </a></p>
+            <p><a href="#" class="linkz">String Type</a></p>
+            <p><a href="#" class="linkz">Objct Type</a></p>
+            <p><a href="#" class="linkz">Array Type</a></p>
+            <p><a href="#" class="linkz">Tuple Type</a></p>
+            <p><a href="#" class="linkz"> Number Type</a></p>
+            <p><a href="#" class="linkz"> Never Type</a></p>
+            <p><a href="#" class="linkz">Enum Type</a></p>
+            <p><a href="#" class="linkz">Any Type</a></p>
+            <p><a href="#" class="linkz">Union Types</a></p>
+            <p><a href="#" class="linkz">Type Aliases</a></p>
+            <p><a href="#" class="linkz">String Literal Type</a></p>
         
             <p>CONTROL FLOW STATEMENTS</p>
-            <p><a href="#">if else</a></p>
-            <p><a href="#">switch case</a></p>
-            <p><a href="#">for</a></p>
-            <p><a href="#">while</a></p>
-            <p><a href="#">do while</a></p>
-            <p><a href="#">break</a></p>
+            <p><a href="#" class="linkz"> if else</a></p>
+            <p><a href="#" class="linkz">switch case</a></p>
+            <p><a href="#" class="linkz">for</a></p>
+            <p><a href="#" class="linkz">while</a></p>
+            <p><a href="#" class="linkz">do while</a></p>
+            <p><a href="#" class="linkz">break</a></p>
              
             
             <p>FUNCTIONS</p>
@@ -331,26 +340,26 @@ border:1px solid white;
         
         <div class="conttw">
         <h3>REFERENCES</h3>
-        <p><a href="#">Array Methods</a></p>
-        <p><a href="#">String Methods</a></p>
-        <p><a href="#">Regular Expressions</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Array Methods</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">String Methods</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Regular Expressions</a></p>
         
         <h3>LATEST TUTORIALS</h3>
-        <p><a href="#">JavaScript Object.groupBy()Method</a></p>
-        <p><a href="#">Node.js TypeScript: How to Automate the Development Workflow</a></p>
-        <p><a href="#">Interfaces vs Abstract Classes</a></p>
-        <p><a href="#">TypeScript Types</a></p>
-        <p><a href="#">Why TypeScript</a></p>
-        <p><a href="#">TypeScript Modules</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">JavaScript Object.groupBy()Method</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Node.js TypeScript: How to Automate the Development Workflow</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Interfaces vs Abstract Classes</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">TypeScript Types</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Why TypeScript</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">TypeScript Modules</a></p>
         
         </div>
         
         <div class="conttr">
         <h3>SITE LINKS</h3>
-        <p><a href="donate.html">Donation ❤️</a></p>
-        <p><a href="aboutus.htm">About Us</a></p>
-        <p><a href="contact.html">Contact Us</a></p>
-        <p><a href="privacypolicy.html">Privacy Policy</a></p>
+        <p><a href="donate.html" style="color: #ffffff;text-decoration: none;">Donation ❤️</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">About Us</a></p>
+        <p><a href="contact.html" style="color: #ffffff;text-decoration: none;">Contact Us</a></p>
+        <p><a href="#" style="color: #ffffff;text-decoration: none;">Privacy Policy</a></p>
         </div>
   </div>
   <center style="background-color:#000000;">Copyright © 2023 by  webber-Javascript Tutorial. All Right Reserved.</center>
